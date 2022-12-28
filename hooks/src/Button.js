@@ -4,10 +4,10 @@ function Button({handleClick,children}) {
     console.log('Rendering Button-',children);
   return (
     <div>
-        <Button onClick={handleClick}>
+        <button onClick={handleClick}>
             {children}
-        </Button>
+        </button>
     </div>
   )
 }
-export default Button
+export default React.memo(Button)
